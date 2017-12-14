@@ -1,1 +1,3 @@
-# Structure Data
+# Structure Data vs Flat Data
+
+[install](doc/install.html)
