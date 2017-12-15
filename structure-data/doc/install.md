@@ -28,4 +28,8 @@
 
 You will see README.md and project directories in the current directory.
 
+If you import the project into Eclips as Maven project, you will
+
+![alt text](image/eclipse.png)
+
 [back](../Readme.md)
