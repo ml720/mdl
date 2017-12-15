@@ -5,7 +5,7 @@ _Main_ is the entry of this project. You can run it and see all outputs.
 
 _FlatData_ matches row in data.csv file in src/main/resources. It has 9 fields and two static functions to read and write data from and to the file.
 
-_Model_ is an abstract class. It has a protected and static _List<FlatData>_, which stores loaded data from external data file, and is used by derived classes to create different structure data.
+_Model_ is an abstract class. It has a protected and static _List&ltFlatData&gl_, which stores loaded data from external data file, and is used by derived classes to create different structure data.
 
 Each _jxsource.javademo.structuredata.model_ sub package: _company_ and _timeseries_, and _ceo_ contains classes for a separate structured data model. Each structure data is created by an _Analyzer_ class in the corresponding package, which is a sub class of Model and uses _List<FlatData>_ defined in the super _Model_ class. Note, although all _Analyzer_ classes have the same Name, their implementations are different (See their different code). In other words, you can use one String, like _Analyzer_, to name many different classes in different packages. Because a class is identified by its name and its package name, _Analyzer_ in different packages are handled separately by Java Virtual Machine (JVM). It is what people say to distinguish class by name space. But class names in the same package must be different. It is the same for _FlatDataComparator_, which Analyzer uses to sort _List<FlatData>_. Although all _FlatDataComparators_ have the same name, their implementations are different. 
 
