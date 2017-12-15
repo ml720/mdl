@@ -9,11 +9,11 @@ import java.util.List;
 import jxsource.javademo.structuredata.model.FlatData;
 import jxsource.javademo.structuredata.model.company.CEO;
 import jxsource.javademo.structuredata.model.company.Company;
-import jxsource.javademo.structuredata.model.company.CompanyAnalyzer;
-import jxsource.javademo.structuredata.model.company.CompanyComparator;
+import jxsource.javademo.structuredata.model.company.Analyzer;
+import jxsource.javademo.structuredata.model.company.FlatDataComparator;
 import jxsource.javademo.structuredata.report.ReportPrinter;
 
-public class CEOGenerator extends CompanyAnalyzer {
+public class CEOGenerator extends Analyzer {
 
 	public List<FlatData> addCEO() throws IOException {
 		build();

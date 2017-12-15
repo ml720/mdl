@@ -13,7 +13,7 @@ public class CompanyTest {
 	@Test
 	public void test() throws IOException {
 		List<FlatData> fdList = FlatData.load("src/main/resources/data.csv");
-		CompanyAnalyzer companyAnalyzer = new CompanyAnalyzer();
+		Analyzer companyAnalyzer = new Analyzer();
 		companyAnalyzer.build();
 		int count = 0;
 		for(Company c:companyAnalyzer.getCompanyList()) {

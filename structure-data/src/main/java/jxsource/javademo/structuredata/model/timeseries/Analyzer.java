@@ -15,12 +15,12 @@ import jxsource.javademo.structuredata.model.company.Qtr;
 import jxsource.javademo.structuredata.report.SummaryReport;
 import jxsource.javademo.structuredata.report.SummaryData;
 
-public class TimeSeries extends Model implements SummaryReport{
+public class Analyzer extends Model implements SummaryReport{
 	private List<Year> yearList = new ArrayList<Year>();
 	public void build() throws IOException {
 		List<FlatData> listSrc = load();
 		List<FlatData> listSort = new ArrayList<FlatData>(listSrc);
-		Collections.sort(listSort, new TimeComparator());
+		Collections.sort(listSort, new FlatDataComparator());
 		int currentCompany = -99;
 		int currentYear = -99;
 		int qtrs = 0;

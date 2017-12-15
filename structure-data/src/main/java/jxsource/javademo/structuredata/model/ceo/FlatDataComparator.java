@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 import jxsource.javademo.structuredata.model.FlatData;
 
-public class CEOComparator implements Comparator<FlatData>{
+public class FlatDataComparator implements Comparator<FlatData>{
 
 	public int compare(FlatData f0, FlatData f1) {
 		if(!f0.getCeo().equals(f1.getCeo())) {

@@ -1,29 +1,24 @@
 package jxsource.javademo.structuredata;
 
 import java.io.IOException;
-import java.util.List;
 
-import jxsource.javademo.structuredata.model.FlatData;
-import jxsource.javademo.structuredata.model.Model;
-import jxsource.javademo.structuredata.model.ceo.CEOAnalyzer;
-import jxsource.javademo.structuredata.model.company.Company;
-import jxsource.javademo.structuredata.model.company.CompanyAnalyzer;
-import jxsource.javademo.structuredata.model.timeseries.TimeSeries;
 import jxsource.javademo.structuredata.report.ReportPrinter;
-import jxsource.javademo.structuredata.util.CEOGenerator;
 
 public class Main {
 	public static void main(String[] args) {
 		try {
 			ReportPrinter printer = new ReportPrinter().setPrintStream(System.out);
-			CompanyAnalyzer companyAnalyzer = new CompanyAnalyzer();
+			jxsource.javademo.structuredata.model.company.Analyzer companyAnalyzer 
+				= new jxsource.javademo.structuredata.model.company.Analyzer();
 			companyAnalyzer.build();
 			printer.printSummaryReport(companyAnalyzer, "Company Summary Report");
 			printer.printCEOReport(companyAnalyzer, "Company CEO Report");
-			TimeSeries timeSeries = new TimeSeries();
+			jxsource.javademo.structuredata.model.timeseries.Analyzer timeSeries 
+				= new jxsource.javademo.structuredata.model.timeseries.Analyzer();
 			timeSeries.build();
 			printer.printSummaryReport(timeSeries, "Year Summary Report");
-			CEOAnalyzer ceoAnalyzer = new CEOAnalyzer();
+			jxsource.javademo.structuredata.model.ceo.Analyzer ceoAnalyzer 
+				= new jxsource.javademo.structuredata.model.ceo.Analyzer();
 			ceoAnalyzer.build();
 			printer.printCEOSummayReport(ceoAnalyzer, "CEO Summary Report");
 		} catch (IOException e) {

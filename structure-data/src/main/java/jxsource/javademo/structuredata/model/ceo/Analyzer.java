@@ -15,7 +15,7 @@ import jxsource.javademo.structuredata.report.CEOData;
 import jxsource.javademo.structuredata.report.CEOReport;
 import jxsource.javademo.structuredata.report.SummaryData;
 
-public class CEOAnalyzer extends Model implements CEOReport{
+public class Analyzer extends Model implements CEOReport{
 	private List<CEO> ceoList = new ArrayList<CEO>();
 	
 	public List<CEO> getCompanyList() {
@@ -25,7 +25,7 @@ public class CEOAnalyzer extends Model implements CEOReport{
 	public void build() throws IOException {
 		List<FlatData> listSrc = load();
 		List<FlatData> listSort = new ArrayList<FlatData>(listSrc);
-		Collections.sort(listSort, new CEOComparator());
+		Collections.sort(listSort, new FlatDataComparator());
 		int companyId = -99;
 		int prevYear = -99;
 		int prevQtr = -99;
