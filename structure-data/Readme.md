@@ -15,6 +15,11 @@ But one class can only extends from one super class. It cannot extends from two 
 * Same for interface. Many classes can implement one same interface. However 
 one class can implements ##multiple## interfaces!
 
+Try to understand the concept. If you have question, send me email and message. 
+The code is to help you to understand and for you to have real examples to look into.
+It depends on your available time. If you can understand 70%, I will be very happy.
+
+Let me know if it is helpful or not.
 
 
 
