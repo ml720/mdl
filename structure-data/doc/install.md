@@ -27,3 +27,5 @@
 >git pull origin master
 
 You will see README.md and project directories in the current directory.
+
+[back](../README.md)
