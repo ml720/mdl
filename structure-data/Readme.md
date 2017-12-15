@@ -1,3 +1,4 @@
 # Structure Data vs Flat Data
 
-[install](doc/install.html)
+[Install instruction](doc/install.md) for git beginner.
+
