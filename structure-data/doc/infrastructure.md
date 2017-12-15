@@ -22,4 +22,4 @@ Note, _ReportPrinter_ methods take _CEOReport_ or _SummaryReport_ interfaces, no
 All _Analyzer_s implements _abstract List<FlatData> getFlatDataList()_ method defined in _Model_ class, which converts different structure data back to _FlatData_ and used by save() method to export data to a file. Note, because company, timeseries and CEO data structures are different, they way convert them back to FlatData are different. To allow _Model.save()_ method to use it when saving different structure data, it is defined as abstract in Model, which allows _Model.save()_ method to call it but leave the implementation for the derived classes.
 
 
-
+[back](../Readme.md) to previous page
