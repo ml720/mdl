@@ -32,4 +32,4 @@ If you import the project into Eclips as Maven project, you will see
 
 ![alt text](image/eclipse.png)
 
-[back](https://github.com/JxSrcInc/mdl/structure-data) to previous page
+[back](https://github.com/JxSrcInc/mdl/tree/master/structure-data) to previous page
