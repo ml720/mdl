@@ -28,4 +28,4 @@
 
 You will see README.md and project directories in the current directory.
 
-[back](.) to previous page
+[back](https://github.com/JxSrcInc/mdl) to previous page
