@@ -28,4 +28,4 @@
 
 You will see README.md and project directories in the current directory.
 
-[back](README.md) to previous page
+[back](.) to previous page
