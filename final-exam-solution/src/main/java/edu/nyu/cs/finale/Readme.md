@@ -10,6 +10,6 @@
 
 **_overloaded_** package for Short Answers 3 in Sample 2
 
-**_primeAndObject_** package demos function can change array's elements when array is passed in as parameter. Related to Question 21 - 22 in Sample 1.
+**_parameterPassing_** package demos how parameters passing through function Related to Question 21 - 22 in Sample 1.
 
 **_saxophone_** package for Short Answers 2 in Sample 2 
