@@ -1,0 +1,173 @@
+1: 	2
+2: 	A[1][1] = 5;
+3:
+		for(int i=0; i<A.length; i++) {
+			for(int k=0; k<A[i].length; k++) {
+				if(A[i][k] == 2) {
+					System.out.println("found it! "+i+","+k);
+				}
+			}
+		}
+
+4:
+		int[][] B = new int[4][4];
+		for(int i=0; i<A.length; i++) {
+			for(int k=0; k<A[i].length; k++) {
+				B[i][k] = A[i][k];
+			}
+		}
+		B[3] = new int[] {4,22,9,0};
+5:
+	You can add element to ArrayList without to worry about array size. 
+	
+	
+6:
+	Dog fluffy = new Dog();
+7:
+	b) fluffy.hasTail
+	
+8:
+	a) name,
+	b) furType
+	d) age
+	e) agender
+	all private instance variables. They must use getters and setters. 
+	
+9:
+	Dog(String name, String furType, boolean hasTail, int age, int agender) {
+		this.name = name;
+		this.furTypt = furType;
+		this.hasTail = hasTail;
+		this.age = age;
+		this.agender = agender;
+	}
+	new Dog("Althea","short fur", true, 12, Dog.FEMALE);
+	
+10:
+	Dog(String name) {
+		this.name = name;
+	}
+
+11:
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+12:
+	public void setAge(int age) {
+		if(0 <= age && age <= 22) {
+			this.age = age;
+		}
+	}
+	
+13: assume cookingTime is cookingTimeQuantity and only ingredients, cookingMethod and cookingTimeQuantity new defaults.
+public class Scone extends Bannock{
+	  String[] ingredients = {"new oat groats", "new lard", "new water"}; 
+	  String cookingMethod = "new pan frying"; 
+	  int cookingTimeQuantity = 9;
+}
+Let me know if I missunderstand the question
+
+14:
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Scone other = (Scone) obj;
+		if (cookingMethod == null) {
+			if (other.cookingMethod != null)
+				return false;
+		} else if (!cookingMethod.equals(other.cookingMethod))
+			return false;
+		if (cookingTimeQuantity != other.cookingTimeQuantity)
+			return false;
+		if (!Arrays.equals(ingredients, other.ingredients))
+			return false;
+		return true;
+	}
+
+15:
+	  public static void main(String[] args) {
+		  String[] ingredients = new String[] {"a", "b", "c"};
+		  String method = "method1";
+		  int quantity = 2;
+		  Scone scone1 = new Scone(ingredients, method, quantity);
+		  // simple way
+		  Scone scone2 = new Scone(new String[] {"d","e"}, "method2",24);
+		  System.out.println(scone1.equals(scone2));
+		  // extra code for you run
+		  Scone scone3 = scone1;
+		  System.out.println(scone1.equals(scone3));
+		  
+	  }
+
+16:
+	b: as a reference type. Because it is an object
+	
+17:
+	public void setGrain(String grain) {
+		ingredients[0] = grain; // the first element has index 0 !
+	}
+
+
+18:
+	Scone scone = new Scone();
+	scone.mix();
+	
+19:
+	Because all instances of Bannock must have the same value for origin. -- If a class has a static field, then all instances have the same value for static field
+	
+
+	
+a) users of a tool should not need to know how that tool works internally 
+b) properties and methods "belong to" an object or class 
+c) objects can inherit properties from other objects 
+d) a class that inherits from a parent class can sometimes be treated as an 
+instance of the parent class 
+     
+Q20: Encapsulation is the idea that.....  
+  users of a tool should not need to know how that tool works internally 
+   
+Q21: Abstraction is the idea that.....   
+  properties and methods "belong to" an object or class 
+   
+Q22: Inheritance is the idea that.....   
+  objects can inherit properties from other objects 
+  
+Q23: Polymorphism is the idea that.....   
+  a class that inherits from a parent class can sometimes be treated as an 
+instance of the parent class 
+      
+	  
+24:
+this refers to instance is never used in static method.
+
+25:
+b) no
+
+26: 
+a) yes. but in Java it is called super
+
+27:
+b) no
+
+28:
+b) no. you can override a method in sub class
+
+29:
+b) no. Integer object is an object, not primitive data
+
+30:
+a) yes
+
+Extra points
+
+1. Code Reuse: Objects created for Object Oriented Programs can easily be reused in other programs
+2. Encapsulation: Once an Object is created, knowledge of its implementation is not necessary for its use.
+3. Encapsulation: Objects have the ability to hide certain parts of themselves from programmers. This prevents programmers from tampering with values they shouldn't.
